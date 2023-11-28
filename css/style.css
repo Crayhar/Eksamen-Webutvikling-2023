@@ -1,0 +1,409 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: auto;
+    max-width: 1600px;
+}
+
+header {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+header nav{
+    position: relative;
+    text-align: right;
+}
+
+header nav a {
+    position: relative;
+    top: 50%;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    
+}
+
+/* Satt inn litt kode fra CSS Animasjon forelsesningen i forhold til animasjon ved hover */
+header nav a::before{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #e6bd43;
+    border-radius: 15px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+/* Lånt fra CSS Animasjons forelesningen */
+header nav a:hover::before{
+    transform: scaleX(100%);
+}
+
+
+
+footer {
+    background-color: #252525;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    font-size: large;
+}
+
+footer section {
+    padding-right: 15px;
+}
+
+footer section a {
+    text-decoration: none;
+    color: white;
+}
+
+footer section a:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+footer img {
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+
+/* CLASSES */
+.contact-btn {
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #e6bd43;
+    font-weight: bold;
+}
+
+.active {
+    border-bottom: #e6bd43 solid 2px;
+    font-weight: bold;
+}
+
+.headline {
+    /* Fant bilde på Pixabay: https://pixabay.com/photos/parachute-extreme-alpine-freedom-4078833/ */
+    background-image: url('img/parachute-4078833_1280.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    padding: 5rem;
+    text-align: center;
+}   
+
+.headline h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+
+.read-srvc-btn {
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #e6bd43;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.border-box{
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    padding: 1rem 2rem;
+    
+}
+
+.border-box img {
+    padding: 0 2rem
+}
+
+
+.header-Title {
+    margin-left: 5%;
+}
+
+.xplore-job {
+    margin-left: 5%;
+}
+
+.breakline {
+    border: #e6bd43 2px solid;
+    margin-left: 5%;
+    margin-right: 5%
+    
+}
+
+#branding {
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    gap: 69px; /* Nice! */
+    flex-wrap: wrap;
+    align-content:flex-start;
+    text-align: left;
+
+}
+
+#branding article:not(.bigImage) {
+    max-width: 350px;
+    min-width: 200px;
+}
+
+#design {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    text-align: left;
+}
+
+#development {
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    text-align: left;
+}
+
+
+
+.bigImage {
+    width: 500px;
+    position: relative;
+    text-align: left;
+    flex-flow: column wrap;
+}
+
+.portfolio-btn {
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: solid;
+}
+
+.center-text-section {
+    text-align: center;
+    padding: 15px;
+}
+
+.center-text-header {
+    text-align: center;
+}
+
+#services {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 16rem; 
+}
+
+#services section h4 {
+    font-weight:900;
+}
+
+#services section i {
+    font-size: 25px;
+}
+
+
+#white-read-more-btn {
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: solid;
+}
+
+#white-read-more-btn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border: solid;
+    border-color: black;
+}
+
+#sign-up-btn {
+    background-color:#e6bd43;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+
+#inputfield {
+    background-color: white;
+    border: none;
+    width: 150px;
+    height: 45px;
+}
+
+#newsletter {
+    background-color: #f3f0f1;
+    padding: 30px 50px 30px 50px;
+    
+    
+}
+
+#portfolio-heading {
+    /*Fant bildet fra unsplash: https://unsplash.com/photos/jet-black-iphone-7-beside-analog-watch-HONJP8DyiSM*/
+    background-image: url('img/oliver-pecker-HONJP8DyiSM-unsplash.jpg'); /*Fant ut hvordan jeg legger til bakgrunnsbilde via w3Schools: https://www.w3schools.com/cssref/pr_background-image.php*/
+    box-shadow: inset 0 0 0 1000px #b4b4b460; /* Fant denne fra Stack Overflow: https://stackoverflow.com/questions/9182978/semi-transparent-color-layer-over-background-image*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    background-color: #b4b4b460;
+    align-content: center;
+    padding: 5.5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#about-heading {
+    background-image: url('img/oliver-pecker-HONJP8DyiSM-unsplash.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    align-content: center;
+    padding: 5.5rem;
+    height: 390px;
+}
+
+#about-side-box {
+    background-color: #e7e7e69c; 
+    float: right;
+    width: 600px;
+    height: 250px;
+    padding: 3rem;
+}
+
+#about-contact-btn {
+    border: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #e6bd43;
+    padding: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#client-section {
+    background-color: #e6bd43;
+    padding: 1rem;
+    text-align: center;
+}
+
+#client-section img {
+    margin: 15px;
+}
+
+#client-section h1 {
+    font-size: 2rem;
+}
+
+#contact-us {
+    background-color: #b4b4b460;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-content: space-between;
+    margin: auto;
+    flex-direction: row;
+    
+}
+
+#contact-us-title {
+    text-align: center;
+    background-color: #b4b4b460;
+    padding: 5% 0 15px 0;
+    margin: 0;
+}
+
+#message-us {
+    text-align: left;
+    margin: auto;
+    width: 35%;
+}
+
+#message-us a {
+    text-decoration: none;
+    color: black;
+}
+
+.message-us-user-input {
+    background-color: white;
+    border: none;
+    width: 600px;
+    height: 45px;
+}
+
+#message-us-user-input-textarea {
+    background-color: white;
+    border: none;
+    width: 600px;
+    height: 150px;
+}
+
+#send-message-btn {
+    display: flex;
+    border: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #e6bd43;
+    padding: 15px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    width: 130px;
+}
+
+#contact-sect {
+    margin: auto;
+    width: 35%;
+    text-align: left;
+}
+
+#contact-sect ul {
+    list-style: none;
+}
+
+#social-buttons a i{
+    font-size: 30px;
+    margin: 5px;
+}
