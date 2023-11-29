@@ -29,26 +29,6 @@ header nav a {
     
 }
 
-/* Satt inn litt kode fra CSS Animasjon forelsesningen i forhold til animasjon ved hover */
-header nav a::before{
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 5px;
-    bottom: 0;
-    left: 0;
-    background-color: #e6bd43;
-    border-radius: 15px;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-/* Lånt fra CSS Animasjons forelesningen */
-header nav a:hover::before{
-    transform: scaleX(100%);
-}
-
 
 
 footer {
@@ -90,6 +70,11 @@ footer img {
     font-weight: bold;
 }
 
+.contact-btn:hover {
+    background-color: black;
+    color: #e6bd43;
+}
+
 .active {
     border-bottom: #e6bd43 solid 2px;
     font-weight: bold;
@@ -121,6 +106,12 @@ footer img {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+.read-srvc-btn:hover {
+    background-color: black;
+    color: #e6bd43;
+    transition: 0.5s;
 }
 
 .border-box{
@@ -208,6 +199,14 @@ footer img {
     border: solid;
 }
 
+.portfolio-btn:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    border: solid;
+    border-color: black;
+}
+
 .center-text-section {
     text-align: center;
     padding: 15px;
@@ -263,6 +262,12 @@ footer img {
     color: black;
     font-weight: bold;
     
+}
+
+#sign-up-btn:hover {
+    background-color: black;
+    color: #e6bd43;
+    transition: 0.5s;
 }
 
 #inputfield {
@@ -321,6 +326,12 @@ footer img {
     font-weight: bold;
     text-decoration: none;
     color: black;
+}
+
+#about-contact-btn:hover {
+    background-color: black;
+    color: #e6bd43;
+    transition: 0.5s;
 }
 
 #client-section {
@@ -390,6 +401,12 @@ footer img {
     font-weight: bold;
     margin: 10px 0 0 0;
     width: 130px;
+}
+
+#send-message-btn:hover {
+    background-color: black;
+    color: #e6bd43;
+    transition: 0.5s;
 }
 
 #contact-sect {
